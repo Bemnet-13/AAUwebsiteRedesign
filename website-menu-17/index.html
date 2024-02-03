@@ -8,7 +8,8 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/186910cb4d.js" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -17,11 +18,12 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<style>
-		a:hover{
+		a:hover {
 			color: blue !important;
 			font-size: 15px !important;
 		}
-		.dropdown-item:hover{
+
+		.dropdown-item:hover {
 			background-color: white !important;
 		}
 	</style>
@@ -41,31 +43,39 @@
 				<div class="col-md-8 order-md-last">
 					<div class="row">
 						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="index.html">Addis Ababa <span>University</span></a>
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-							<form action="#" class="searchform order-lg-last">
-								<div class="form-group d-flex">
-									<input type="text" class="form-control pl-3 bordered border-black"
-										style="border: 2px solid black;" placeholder="Search">
-									<button type="submit" placeholder="" class="form-control search"><span
-											class="fa fa-search"></span></button>
+							<form action="#" class="order-lg-last">
+								<div class="input-group rounded">
+									<input type="search" class="form-control rounded" placeholder="Search"
+										aria-label="Search" aria-describedby="search-addon" />
+									<button class="btn btn-outline-primary" type="submit">Search</button>
 								</div>
+								<!-- <form class="d-flex" role="search">
+									<input class="form-control me-2" type="search" placeholder="Search"
+										aria-label="Search">
+									<button class="btn btn-outline-success" type="submit">Search</button>
+								</form> -->
 							</form>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex">
-					<div class="social-media">
+					<div>
 						<p class="mb-0 d-flex">
-							<a href="#" class="d-flex align-items-center justify-content-center"><span
-									class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span
-									class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span
-									class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-							<a href="#" class="d-flex align-items-center justify-content-center"><span
-									class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+							<a style="color: #3b5998;" href="#!"
+								class="d-flex align-items-center justify-content-center m-4" role="button"><i
+									class="fab fa-facebook-f fa-lg"></i></a>
+							<!-- Twitter -->
+							<a style="color: #55acee;" href="#!"
+								class="d-flex align-items-center justify-content-center m-4" role="button"><i
+									class="fab fa-twitter fa-lg"></i></a>
+							<!-- Google -->
+							<a style="color: #dd4b39;" href="#!"
+								class="d-flex align-items-center justify-content-center m-4" role="button"><i
+									class="fab fa-google fa-lg"></i></a>
+							<!-- Instagram -->
+
 						</p>
 					</div>
 				</div>
@@ -80,10 +90,10 @@
 				</button>
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav m-auto">
-						<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-						<li class="nav-item dropdown">
+						<li class="active"><a href="#" class="nav-link">Home</a></li>
+						<li class="dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false"></a>
+								aria-haspopup="true" aria-expanded="false">Latest</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown04">
 								<a class="dropdown-item" href="#">Anouncements</a>
 								<a class="dropdown-item" href="#">Documents</a>
@@ -91,9 +101,7 @@
 								<a class="dropdown-item" href="#">Magazines</a>
 							</div>
 						</li>
-						<li class="nav-item"><a href="" class="nav-link">Home</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Latest</a></li>
-						<li class="nav-item dropdown">
+						<li class="dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">About</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -103,12 +111,12 @@
 								<a class="dropdown-item" href="#">Magazines</a>
 							</div>
 						</li>
-						<li class="nav-item"><a href="" class="nav-link">Academics</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Admission</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Research</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Library</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Offices</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Services</a></li>
+						<li><a href="" class="nav-link">Academics</a></li>
+						<li><a href="" class="nav-link">Admission</a></li>
+						<li><a href="" class="nav-link">Research</a></li>
+						<li><a href="" class="nav-link">Library</a></li>
+						<li><a href="" class="nav-link">Offices</a></li>
+						<li><a href="" class="nav-link">Services</a></li>
 				</div>
 			</div>
 		</nav>
@@ -127,28 +135,15 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="item active">
-				<img src="home-6.jpg" alt="Chania">
-				<div class="carousel-caption ">
-					<h3>National Dialogue Key to Achieving Lasting Solutions to Nation’s Pressing Issues : AAU
-						President, Dr Samuel Kifle</h3>
-					<p>LThe president underscored the importance of national dialogue as a More »</p>
-				</div>
+				<img src="home-6.jpg" class="mx-auto d-block" alt="Chania">
 			</div>
 
 			<div class="item">
-				<img src="home6-1.jpg" alt="Chicago">
-				<div class="carousel-caption">
-					<h3>Chicago</h3>
-					<p>Thank you, Chicago!</p>
-				</div>
+				<img src="home6-1.jpg" class="mx-auto d-block" alt="Chicago">
 			</div>
 
 			<div class="item">
-				<img src="home-7.jpg" alt="New York">
-				<div class="carousel-caption">
-					<h3>New York</h3>
-					<p>We love the Big Apple!</p>
-				</div>
+				<img src="home-7.jpg" class="mx-auto d-block" alt="New York">
 			</div>
 		</div>
 
@@ -162,6 +157,309 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
+
+	<!--Main layout-->
+	<div class="container">
+		<!--Section: News of the day-->
+		<section class="border-bottom pb-4 mb-5">
+			<div class="row gx-5">
+				<!-- <div class="col-md-6 mb-4">
+					<div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+						<img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
+						<a href="#!">
+							<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-6 mb-4">
+					<span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+					<h4><strong>Facilis consequatur eligendi</strong></h4>
+					<p class="text-muted">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+						eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+						sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+					</p>
+					<button type="button" class="btn btn-primary">Read more</button>
+				</div> -->
+			</div>
+		</section>
+		<!--Section: News of the day-->
+
+		<!--Section: Content-->
+		<section>
+			<div class="row gx-lg-5">
+				<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+					<!-- News block -->
+					<div>
+						<!-- Featured image -->
+						<div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+							data-mdb-ripple-color="light">
+							<img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.webp" class="img-fluid"
+								alt="Golden Gate National Recreation Area" />
+							<a href="#!">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						</div>
+
+						<!-- Article data -->
+						<div class="row mb-3">
+							<div class="col-6">
+								<a href="" class="text-info">
+									<i class="fas fa-plane"></i>
+									Travels
+								</a>
+							</div>
+
+							<div class="col-6 text-end">
+								<u> 15.07.2020</u>
+							</div>
+						</div>
+
+						<!-- Article title and description -->
+						<a href="" class="text-dark">
+							<h5>This is title of the news</h5>
+
+							<p>
+								AAU has launched an initiative for the establishment of a nationwide association of
+								university cultural centers for connection, collaboration and empowerment of campus
+								communities across the public university system in the country. The Association would
+								strive to foster
+							</p>
+						</a>
+
+						<hr />
+
+						<!-- News -->
+
+
+						<!-- News -->
+
+
+						<!-- News -->
+						<a href="" class="text-dark">
+							<div class="row mb-4 border-bottom pb-2">
+								<div class="col-3">
+									<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+										class="img-fluid shadow-1-strong rounded" alt="Los Angeles Skyscrapers" />
+								</div>
+
+								<div class="col-9">
+									<p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+									<p>
+										<u> 15.07.2020</u>
+									</p>
+								</div>
+							</div>
+						</a>
+
+						<!-- News -->
+						<a href="" class="text-dark">
+							<div class="row mb-4 border-bottom pb-2">
+								<div class="col-3">
+									<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
+										class="img-fluid shadow-1-strong rounded" alt="Skyscrapers" />
+								</div>
+
+								<div class="col-9">
+									<p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+									<p>
+										<u> 15.07.2020</u>
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- News block -->
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<!-- News block -->
+					<div>
+						<!-- Featured image -->
+						<div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4"
+							data-mdb-ripple-color="light">
+							<img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/011.webp" class="img-fluid"
+								alt="Brooklyn Bridge" />
+							<a href="#!">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						</div>
+
+						<!-- Article data -->
+						<div class="row mb-3">
+							<div class="col-6">
+								<a href="" class="text-danger">
+									<i class="fas fa-chart-pie"></i>
+									Business
+								</a>
+							</div>
+
+							<div class="col-6 text-end">
+								<u> 15.07.2020</u>
+							</div>
+						</div>
+
+						<!-- Article title and description -->
+						<a href="" class="text-dark">
+							<h5>AAU Community Radio FM 99.4 Expands Operations in Cooperation with Fana Broadcasting
+								Corporate</h5>
+
+							<p>
+								AAU community radio is serving wider audiences in and around Addis Ababa , following a
+								cooperation agreement for upgrades and operational expansion with Fana Broadcasting
+								Corporate , the University has
+							</p>
+						</a>
+
+						<hr />
+
+						<!-- News -->
+
+
+						<!-- News -->
+
+						<!-- News -->
+						<a href="" class="text-dark">
+							<div class="row mb-4 border-bottom pb-2">
+								<div class="col-3">
+									<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/033.webp"
+										class="img-fluid shadow-1-strong rounded" alt="Louvre" />
+								</div>
+
+								<div class="col-9">
+									<p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+									<p>
+										<u> 15.07.2020</u>
+									</p>
+								</div>
+							</div>
+						</a>
+
+						<!-- News -->
+						<a href="" class="text-dark">
+							<div class="row mb-4 border-bottom pb-2">
+								<div class="col-3">
+									<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/034.webp"
+										class="img-fluid shadow-1-strong rounded" alt="Times Square" />
+								</div>
+
+								<div class="col-9">
+									<p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+									<p>
+										<u> 15.07.2020</u>
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- News block -->
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<!-- News block -->
+					<div>
+						<!-- Featured image -->
+						<div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4"
+							data-mdb-ripple-color="light">
+							<img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.webp" class="img-fluid"
+								alt="Golden Gate National Recreation Area" />
+							<a href="#!">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						</div>
+
+						<!-- Article data -->
+						<div class="row mb-3">
+							<div class="col-6">
+								<a href="" class="text-warning">
+									<i class="fas fa-code"></i>
+									Technology
+								</a>
+							</div>
+
+							<div class="col-6 text-end">
+								<u> 15.07.2020</u>
+							</div>
+						</div>
+
+						<!-- Article title and description -->
+						<a href="" class="text-dark">
+							<h5>This is title of the news</h5>
+							<p>
+								Addis Ababa University and the Organization of Southern Cooperation today held a public
+								lecture titled “Education Systems: Perspectives and Practices from the South ” in
+								commemoration of the proclamation of
+							</p>
+						</a>
+
+						<hr />
+
+						<!-- News -->
+
+
+						<!-- News -->
+
+
+						<!-- News -->
+						<a href="" class="text-dark">
+							<div class="row mb-4 border-bottom pb-2">
+								<div class="col-3">
+									<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/013.webp"
+										class="img-fluid shadow-1-strong rounded"
+										alt="Perdana Botanical Garden Kuala Lumpur" />
+								</div>
+
+								<div class="col-9">
+									<p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+									<p>
+										<u> 15.07.2020</u>
+									</p>
+								</div>
+							</div>
+						</a>
+
+						<!-- News -->
+						<a href="" class="text-dark">
+							<div class="row mb-4 border-bottom pb-2">
+								<div class="col-3">
+									<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/014.webp"
+										class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden" />
+								</div>
+
+								<div class="col-9">
+									<p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+									<p>
+										<u> 15.07.2020</u>
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- News block -->
+				</div>
+			</div>
+		</section>
+		<!--Section: Content-->
+
+		<!-- Pagination -->
+		<nav class="my-4" aria-label="...">
+			<ul class="pagination pagination-circle justify-content-center">
+				<li class="page-item">
+					<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+				</li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item active" aria-current="page">
+					<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item">
+					<a class="page-link" href="#">Next</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!--Main layout-->
 
 
 
