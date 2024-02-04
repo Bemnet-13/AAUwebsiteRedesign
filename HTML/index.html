@@ -15,85 +15,50 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 	<style>
-		a:hover{
-			color: blue !important;
+		a:hover {
+			color: rgb(13, 110, 253) !important;
 		}
-		.navbar{
+
+		.navbar {
 			a:hover {
-			color: blue !important;
-			font-size: 20px !important;
-		}
+				color: rgb(13, 110, 253) !important;
+				font-size: 20px !important;
+			}
 		}
 
 		.dropdown-item:hover {
 			background-color: white !important;
 		}
-		
+
+		.nav-link {
+			color: white;
+		}
 	</style>
 
 </head>
 
 <body>
-	<section class="ftco-section">
-		<div>
-			<div class="row justify-content-center">
-				<img src="../AAU_logo.png" alt="logo">
-			</div>
-		</div>
+	<div class="row justify-content-center">
+		<img src="../images/AAU_logo.png" alt="logo">
+	</div>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-dark">
+		<!-- Container wrapper -->
+		<div class="container-fluid">
+			<!-- Toggle button -->
+			<button data-mdb-collapse-init class="navbar-toggler" type="button"
+				data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
 
-		<div class="container-fluid px-md-5">
-			<div class="row justify-content-between">
-				<div class="col-md-8 order-md-last">
-					<div class="row">
-						<div class="col-md-6 text-center">
-						</div>
-						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-							<form action="#" class="order-lg-last">
-								<div class="input-group rounded">
-									<input type="search" class="form-control rounded" placeholder="Search"
-										aria-label="Search" aria-describedby="search-addon" />
-									<button class="btn btn-outline-primary" type="submit">Search</button>
-								</div>
-								<!-- <form class="d-flex" role="search">
-									<input class="form-control me-2" type="search" placeholder="Search"
-										aria-label="Search">
-									<button class="btn btn-outline-success" type="submit">Search</button>
-								</form> -->
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex">
-					<div>
-						<p class="mb-0 d-flex">
-							<a style="color: #3b5998;" href="#!"
-								class="d-flex align-items-center justify-content-center m-4" role="button"><i
-									class="fab fa-facebook-f fa-lg"></i></a>
-							<!-- Twitter -->
-							<a style="color: #55acee;" href="#!"
-								class="d-flex align-items-center justify-content-center m-4" role="button"><i
-									class="fab fa-twitter fa-lg"></i></a>
-							<!-- Google -->
-							<a style="color: #dd4b39;" href="#!"
-								class="d-flex align-items-center justify-content-center m-4" role="button"><i
-									class="fab fa-google fa-lg"></i></a>
-							<!-- Instagram -->
+			<!-- Collapsible wrapper -->
+			<div class="collapse navbar-collapse" id="navbarLeftAlignExample">
 
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-			<div class="container-fluid">
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-					aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="fa fa-bars"></span> Menu
-				</button>
+				<!-- Left links -->
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav m-auto">
 						<li class="active"><a href="#" class="nav-link">Home</a></li>
@@ -123,11 +88,51 @@
 						<li><a href="" class="nav-link">Library</a></li>
 						<li><a href="" class="nav-link">Offices</a></li>
 						<li><a href="" class="nav-link">Services</a></li>
+						<li class="dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">Quick Links</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown04">
+								<a class="dropdown-item" href="#">Mail</a>
+								<a class="dropdown-item" href="#">e-Learning</a>
+								<a class="dropdown-item" href="#">Staff profile</a>
+								<a class="dropdown-item" href="#">Colleges</a>
+								<a class="dropdown-item" href="#">Research Institute</a>
+								<a class="dropdown-item" href="#">Research Office</a>
+
+							</div>
+						</li>
+						<div class="input-group rounded ml-5">
+							<input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+								aria-describedby="search-addon" />
+							<button class="btn btn-outline-primary" type="submit">Search</button>
+						</div>
+
+						<!-- Collapsible wrapper -->
 				</div>
+				<!-- Container wrapper -->
+	</nav>
+	<!-- Navbar -->
+
+	<!-- END nav -->
+
+	</section>
+	<section class="mb-3">
+		<nav class="navbar navbar-light bg-light">
+			<div class="container-fluid">
+				<button class="navbar-toggler first-button" type="button" data-mdb-toggle="collapse"
+					data-mdb-target="#navbarToggleExternalContent9" aria-controls="navbarToggleExternalContent9"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<div class="animated-icon1"><span></span><span></span><span></span></div>
+				</button>
 			</div>
 		</nav>
-		<!-- END nav -->
-
+		<div class="collapse" id="navbarToggleExternalContent9">
+			<div class="bg-light shadow-3 p-4">
+				<button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
+				<button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
+				<button class="btn btn-link btn-block m-0">Link 3</button>
+			</div>
+		</div>
 	</section>
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -141,15 +146,15 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="item active">
-				<img src="home-6.jpg" class="mx-auto d-block" alt="Chania">
+				<img src="../images/home-6.jpg" class="mx-auto d-block" alt="Chania">
 			</div>
 
 			<div class="item">
-				<img src="home6-1.jpg" class="mx-auto d-block" alt="Chicago">
+				<img src="../images/home6-1.jpg" class="mx-auto d-block" alt="Chicago">
 			</div>
 
 			<div class="item">
-				<img src="home-7.jpg" class="mx-auto d-block" alt="New York">
+				<img src="../images/home-7.jpg" class="mx-auto d-block" alt="New York">
 			</div>
 		</div>
 
@@ -468,11 +473,137 @@
 	<!--Main layout-->
 
 
+	<footer class="text-center text-lg-start bg-dark text-white">
+		<!-- Section: Social media -->
+		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+			<!-- Left -->
+			<div class="me-5 d-none d-lg-block">
+				<p class="h1 text-white fw-bold">Get connected with us on social networks:</p>
+			</div>
+			<!-- Left -->
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+			<!-- Right -->
+			<div>
+				<a href="" class="m-4 text-reset ">
+					<i class="fab fa-facebook-f" style='font-size:48px'></i>
+				</a>
+				<a href="" class="m-4  text-reset" style='font-size:48px'>
+					<i class="fab fa-twitter" style='font-size:48px'></i>
+				</a>
+				<a href="" class="m-4 text-reset">
+					<i class="fab fa-google" style='font-size:48px'></i>
+				</a>
+				<a href="" class="m-4 text-reset">
+					<i class="fab fa-instagram" style='font-size:48px'></i>
+				</a>
+				<a href="" class="m-4 text-reset">
+					<i class="fab fa-linkedin" style='font-size:48px'></i>
+				</a>
+				<a href="" class="m-4 text-reset">
+					<i class="fab fa-github" style='font-size:48px'></i>
+				</a>
+			</div>
+			<!-- Right -->
+		</section>
+		<!-- Section: Social media -->
+
+		<!-- Section: Links  -->
+		<section class="mt-5">
+			<div class="container text-center text-md-start mt-5">
+				<!-- Grid row -->
+				<div class="row mt-3">
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+						<!-- Content -->
+						<div>
+							<img src="../images/AAU.jpeg" alt="" width="300" height="325">
+						</div>
+						<p>
+							Addis Ababa University (AAU) (Amharic: አዲስ አበባ ዩኒቨርሲቲ) is a national university located in
+							Addis Ababa, Ethiopia. It is the oldest university in Ethiopia. AAU has several associated
+							research institutions including the
+							Institute of Ethiopian Studies.
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">
+							Products
+						</h6>
+						<p>
+							<a href="#!" class="text-reset">Angular</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">React</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Vue</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Laravel</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">
+							Useful links
+						</h6>
+						<p>
+							<a href="#!" class="text-reset">Pricing</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Settings</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Orders</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Help</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+						<p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+						<p>
+							<i class="fas fa-envelope me-3"></i>
+							info@example.com
+						</p>
+						<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+						<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+					</div>
+					<!-- Grid column -->
+				</div>
+				<!-- Grid row -->
+			</div>
+		</section>
+		<!-- Section: Links  -->
+
+		<!-- Copyright -->
+		<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+			© 2021 Copyright:
+			<a class="text-reset fw-bold" href="https://mdbootstrap.com/">Addis Ababa University</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+
+
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/nav.js"></script>
+
 
 </body>
 
